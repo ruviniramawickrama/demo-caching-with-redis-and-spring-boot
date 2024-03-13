@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Demo Caching with Redis and Spring Boot
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: postgres
+  cache:
+    type: redis
+    host: localhost
+    port: 6379
