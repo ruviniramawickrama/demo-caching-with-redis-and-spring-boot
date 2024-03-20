@@ -34,7 +34,7 @@ public class BookController {
     @PutMapping("/{id}")
     @CachePut(keyGenerator = "bookCacheKeyGenerator")
     public Book updateBook(@PathVariable long id, @RequestBody Book book) {
-        return bookService.updateBook(id, book);
+        return bookService.updateBook(book);
     }
 
     @DeleteMapping("/{id}")
