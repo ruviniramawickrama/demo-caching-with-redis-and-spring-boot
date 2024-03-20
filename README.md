@@ -33,7 +33,7 @@ Before running the application, make sure the following list is installed/config
 
 `schema.sql`
 - Contains create table SQL statement to create the `Book` table.
-- When the application starts, Spring Boot automatically runs the contents of this file based on the two properties mentioned in the `application.yml` file: **generate-ddl** and **hibernate.ddl-auto**.
+- When the application starts, Spring Boot automatically runs the contents of this file based on the **sql** and **jpa** properties mentioned in the `application.yml` file.
 
 `DemoCachingWithRedisAndSpringBootApplication.java` 
 - Contains the annotation `@EnableCaching` to enable caching across the application. It also contains two bean configurations for **RedisCacheManagerBuilderCustomizer** and **KeyGenerator**.

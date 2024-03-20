@@ -6,9 +6,12 @@ spring:
     url: jdbc:postgresql://localhost:5432/postgres
     username: postgres
     password: postgres
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:\sql\schema.sql
   jpa:
-    generate-ddl: true
-    hibernate.ddl-auto: create
+    hibernate.ddl-auto: none
   cache:
     type: redis
     host: localhost
